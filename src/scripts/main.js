@@ -2,6 +2,7 @@ $circle = $('.slotenmaker-image__circle');
 $kader = $('.slotenmaker-image__kader');
 $map = $('.slotenmaker-image__map');
 $phone = $('.slotenmaker-image__telefoonnummer');
+$key = $('.slotenmaker-image__sleutel');
 
 /* Initial load animatie */
 TweenMax.from($kader, 2, {
@@ -10,20 +11,26 @@ TweenMax.from($kader, 2, {
 	ease: Power1.easeOut,
 	delay: 0
 });
-TweenMax.from($map, 2, {
-	y: 30,
+TweenMax.from($map, 1.5, {
+	y: 20,
 	opacity: .5,
 	ease: Power1.easeOut
 });
-TweenMax.from($phone, 2, {
-	y: 30,
+TweenMax.from($phone, 1.5, {
+	y: 20,
+	opacity: 0,
+	ease: Power1.easeOut,
+	delay: .5
+});
+TweenMax.from($key, 1, {
+	y: -20,
 	opacity: 0,
 	ease: Power1.easeOut,
 	delay: .5
 });
 
 /* Expanding circle */
-var tl = new TimelineMax({repeat:100});
+var tl = new TimelineMax({repeat:100, delay: 0});
 tl.to($circle, 1, {
 	scale: 4,
 	opacity: 0,

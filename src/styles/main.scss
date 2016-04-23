@@ -112,6 +112,14 @@ body {
     background-color: transparent;
 }
 
+@media (min-width: 768px) {
+	.navbar-right {
+	    float: right !important;
+	    margin-right: -15px;
+	    margin-top: -20px;
+	}
+}
+
 ul {
 	list-style: none;
 	padding-left: 0;
@@ -134,6 +142,7 @@ h3 {
 	font-size: 16px;
 	font-family: gothammedium;
 	color: white;
+	margin-bottom: 20px;
 }
 
 p {
@@ -183,6 +192,14 @@ a:hover {
 	position: relative;
 	margin-left: -112px;
 	top: 48px;
+}
+
+.slotenmaker-image__sleutel {
+  position: absolute;
+  z-index: 1000;
+  width: 35%;
+  left: 71%;
+  top: 8%;
 }
 
 .slotenmaker-image__kader {
