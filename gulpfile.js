@@ -16,7 +16,7 @@ gulp.task('clean', function(cb) {
 gulp.task('scripts', function () {
 
     return gulp.src([
-            'src/scripts/client/main.js'
+            'src/scripts/main.js'
         ])
         .pipe($.concat('main.js'))
         // .pipe($.babel())
@@ -45,7 +45,10 @@ gulp.task('vendor', function () {
     exec("bower install", puts);
     return gulp.src([
                 'node_modules/jquery/dist/jquery.js',
-                'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
+                'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
+                'node_modules/gsap/src/minified/TweenMax.min.js',
+                'node_modules/gsap/src/minified/TimelineMax.min.js'
+
             ])
         .pipe($.concat('vendor.js'))
         .pipe(gulp.dest('dist/scripts/'))
@@ -112,8 +115,8 @@ gulp.task('serve', ['build'], function(){
     gulp.watch(['src/data/**/*.json'], ['json']);
     gulp.watch(['src/**/*.html'], ['html']);
     gulp.watch(['src/styles/**/*.{scss,css}'], ['styles']);
-    gulp.watch(['src/scripts/client/**/*.js'], ['scripts']);
-    // gulp.watch(['src/images/**/*', '!src/images/tiles/**/*'], ['images']);
+    gulp.watch(['src/scripts/**/*.js'], ['scripts']);
+    gulp.watch(['src/images/**/*'], ['images']);
     gulp.watch(['src/fonts/**/*'], ['fonts']);
 });
 

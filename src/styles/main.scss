@@ -75,9 +75,145 @@ body {
     font-size: 16px;
 }
 
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: transparent;
+    margin-top: 15px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #E0E0E0;
+    border-radius: 4px;
+    background-clip: padding-box;
+    border: none;
+    box-shadow: none;
+}
+
+@media (max-width: 767px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	    color: #FFF;
+	}
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+	font-family: MercuryRegular;
+	font-size: 14px;
+	color: white;
+}
+
+ul li {
+	margin-top: 10px;
+}
+
 /* Website */
 h2 {
 	font-size: 20px;
 	font-family: gothammedium;
 	color: white;
+}
+h3 {
+	font-size: 16px;
+	font-family: gothammedium;
+	color: white;
+}
+
+p {
+    font-family: MercuryRegular;
+    color: #EAEAEA;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.cta {
+	background: white;
+    color: #3CAF73;
+    font-family: gothambook;
+    /*text-transform: uppercase;*/
+    font-size: 12px;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+
+/* Map image */
+.slotenmaker-image {
+	max-width: 514px;
+	position: relative;
+	margin-left: -112px;
+	top: 48px;
+}
+
+.slotenmaker-image__kader {
+	width: 100%;
+}
+
+.slotenmaker-image__telefoonnummer {
+	width: 68%;
+	z-index: 100;
+	position: absolute;
+	left: 170px;
+	top: 61%;
+}
+
+.slotenmaker-image__map {
+	position: absolute;
+	top: 25%;
+	width: 83%;
+	left: 99px;
+}
+
+.slotenmaker-image__circlecontainer {
+	position: absolute;
+	left: 61%;
+	width: 100px;
+	top: 36%;
+	z-index: 10;
+}
+
+.slotenmaker-image__circle {
+    width: 30%;
+}
+
+footer {
+	margin-top: 40px;
+	padding-bottom: 40px;
+	border-top: 1px dotted white;
+}
+
+input[type="text"], input[type="email"] {
+  display: block;
+  margin: 0;
+  width: 100%;
+  font-family: MercuryRegular;
+  font-size: 14px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+}
+input[type="text"]:focus, input[type="email"]:focus {
+  outline: none;
+}
+
+input[type="text"], input[type="email"] {
+  padding: 8px;
+  border: none;
+	border-bottom: solid 2px #692380;
+  transition: border 0.3s;
+  margin-top: 5px;
+}
+input[type="text"]:focus,
+input[type="text"].focus, input[type="email"]:focus, input[type="email"].focus {
+  border-bottom: solid 2px #969696;
 }
