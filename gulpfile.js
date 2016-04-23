@@ -48,7 +48,6 @@ gulp.task('vendor', function () {
                 'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
                 'node_modules/gsap/src/minified/TweenMax.min.js',
                 'node_modules/gsap/src/minified/TimelineMax.min.js'
-
             ])
         .pipe($.concat('vendor.js'))
         .pipe(gulp.dest('dist/scripts/'))
