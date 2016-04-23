@@ -1,0 +1,83 @@
+@import 'bootstrap';
+@import 'settings';
+
+body {
+	background-image: url('../images/bg-rechts.png'), url('../images/bg-links.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top right, top left;
+	background-color: $green;
+
+	padding: 50px 50px 0 50px;
+}
+
+/* Fonts */
+@font-face {
+    font-family: "gothambook";
+    src: url("../fonts/gotham-htf-book.woff") format('woff');
+}
+@font-face {
+    font-family: "gothambook";
+    src: url("../fonts/gotham-htf-book.eot") format('eot');
+}
+
+@font-face {
+    font-family: "gothammedium";
+    src: url("../fonts/gotham-htf-medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: "MercuryRegular";
+    src: url("../fonts/mercury_regular-webfont.woff") format('woff');
+}
+
+@font-face {
+    font-family: "MercuryRegular";
+    src: url("../fonts/mercury_regular-webfont.eot") format('eot');
+}
+
+/*@font-face {
+    font-family: "myfont";
+}
+
+@font-face {
+    font-family: "myfont";
+    src: url("fonts/awesome-font-oblique.woff") format('woff');
+    font-style: italic;
+}
+*/
+/* Bootstrap reset */
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-brand {
+    float: left;
+    padding: 5px 15px;
+    width: 180px;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #FFF;
+    font-family: gothambook;
+    font-size: 16px;
+}
+
+/* Website */
+h2 {
+	font-size: 20px;
+	font-family: gothammedium;
+	color: white;
+}
