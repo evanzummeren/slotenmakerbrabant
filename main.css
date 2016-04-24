@@ -4947,33 +4947,51 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+/*body {
+	background-image: url('images/bg-rechts.png'), url('images/bg-links.png');
+	background-repeat: no-repeat, no-repeat;
+	background-position: top right, top left;
+	background-color: $green;
+	padding: 50px 50px 0 50px;
+}*/
 body {
-  background-image: url("../images/bg-rechts.png"), url("../images/bg-links.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position: top right, top left;
+  background-image: url("images/bg-rechts.png");
+  background-repeat: no-repeat;
+  background-position: top right;
   background-color: #3CAF73;
   padding: 50px 50px 0 50px; }
 
 /* Fonts */
 @font-face {
   font-family: "gothambook";
-  src: url("../fonts/gotham-htf-book.woff") format("woff"); }
+  src: url("fonts/gotham-htf-book.woff") format("woff"); }
 
 @font-face {
   font-family: "gothambook";
-  src: url("../fonts/gotham-htf-book.eot") format("eot"); }
+  src: url("fonts/gotham-htf-book.eot") format("eot"); }
 
 @font-face {
   font-family: "gothammedium";
-  src: url("../fonts/gotham-htf-medium.woff") format("woff"); }
+  src: url("fonts/gotham-htf-medium.woff") format("woff"); }
 
 @font-face {
   font-family: "MercuryRegular";
-  src: url("../fonts/mercury_regular-webfont.woff") format("woff"); }
+  src: url("fonts/mercury_regular-webfont.woff") format("woff"); }
 
 @font-face {
   font-family: "MercuryRegular";
   src: url("../fonts/mercury_regular-webfont.eot") format("eot"); }
+
+@font-face {
+  font-family: "MercuryBold";
+  src: url("fonts/mercury_bold-webfont.woff") format("woff"); }
+
+@font-face {
+  font-family: "MercuryBold";
+  src: url("../fonts/mercury_bold-webfont.eot") format("eot"); }
+
+strong {
+  font-family: "MercuryBold"; }
 
 /*@font-face {
     font-family: "myfont";
@@ -5058,6 +5076,12 @@ ul li {
   margin-top: 10px; }
 
 /* Website */
+h1 {
+  font-size: 36px;
+  font-family: gothammedium;
+  color: white;
+  text-transform: lowercase; }
+
 h2 {
   font-size: 20px;
   font-family: gothammedium;
@@ -5075,11 +5099,11 @@ p {
   line-height: 24px;
   font-size: 14px; }
 
-.footer__link {
+.footer__link, .link {
   color: white;
   border-bottom: 1px solid white; }
 
-.footer__link:hover {
+.footer__link:hover, .link:hover {
   text-decoration: none;
   color: #692380;
   border-bottom: 1px solid #692380; }
@@ -5199,3 +5223,9 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: white;
   color: #692380; }
+
+#left_geom {
+  width: 541px;
+  position: absolute;
+  left: -221px;
+  top: -149px; }
