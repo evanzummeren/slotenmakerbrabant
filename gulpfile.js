@@ -47,7 +47,9 @@ gulp.task('vendor', function () {
                 'node_modules/jquery/dist/jquery.js',
                 'node_modules/bootstrap-sass/assets/javascripts/bootstrap.js',
                 'node_modules/gsap/src/minified/TweenMax.min.js',
-                'node_modules/gsap/src/minified/TimelineMax.min.js'
+                'node_modules/gsap/src/minified/TimelineMax.min.js',
+                'node_modules/urijs/src/URI.min.js',
+                'node_modules/firebase/lib/firebase-web.js'
             ])
         .pipe($.concat('vendor.js'))
         .pipe(gulp.dest('dist/scripts/'))
